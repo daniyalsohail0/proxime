@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import Welcome from './components/Welcome';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import CountDown from './components/CountDown';
+import Drops from './components/Drops';
+import Roadmap from './components/Roadmap';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App min-h-screen">
+      <Navbar />
+      <Welcome />
+      <CountDown />
+      <Drops />
+      <Roadmap />
     </div>
   );
 }
